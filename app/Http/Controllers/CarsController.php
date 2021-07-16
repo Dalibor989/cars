@@ -45,9 +45,9 @@ class CarsController extends Controller
      * @param  \App\Models\Cars  $cars
      * @return \Illuminate\Http\Response
      */
-    public function show(Cars $cars)
+    public function show(Cars $car)
     {
-        //
+        return view('car', compact('car'));
     }
 
     /**
